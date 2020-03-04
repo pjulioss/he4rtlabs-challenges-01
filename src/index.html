@@ -1,15 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Calculadora de Freela - He4rtDevs</title>
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <div>
-      <h1>Olá mundo.</h1>
-    </div>
-    <script src="./main.js"></script>
+    <header>
+      <img src="he4t logo.png" alt="logo">
+      <h1>Calculadora de Freelance</h1>
+    </header>
+
+    <section class="container">
+
+      <form id="my-form">
+
+        <div>
+          <label for="valorProjeto">Valor do projeto</label>
+          <input type="text" name="valorProjeto" id="valorProjeto" placeholder="R$" required>
+        </div>
+
+        <div>
+          <label for="horasTrabDia">Horas diarias</label>
+          <input type="text" name="horasTrabDia" id="horasTrabDia" required>
+        </div>
+
+        <div>
+          <label for="diasTrab">Qtd dias trabalhados </label>
+          <input type="text" id="diasTrab" name="diasTrab" required>
+        </div>
+        
+        <div>
+          <label for="diasFerias">Qtd dias parado </label>
+          <input type="text" id="diasFerias" name="diasFerias" required>
+        </div>
+
+        <button class="btn" type="submit">Calcular</button>
+
+      </form>
+
+      <!-- Valor do calculo aparece aqui -->
+      <div id="">
+        <p>Valor da sua hora R$ <span id=valorFinal></span></p>
+      </div>
+
+    </section>
+    
+
+    <script src="main.js"></script>
   </body>
 </html>
